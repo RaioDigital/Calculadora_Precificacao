@@ -10,10 +10,11 @@ Não deixe de considerar as seguintes variáveis:
 - Despesas variáveis (DV)
 - Margem de lucro (ML)
 
-Preço de Venda
+## Preço de Venda
+
 Agora que você encontrou o valor do Markup, para descobrir o preço de venda, multiplique-o pelo custo de produção usando a fórmula abaixo considerando, é claro, as suas variáveis:
 
-## Preço de venda = Markup x Custo de Produção.
+Preço de venda = Markup x Custo de Produção.
 
 - Preço de Venda (PV)
 - Markup (MK)
