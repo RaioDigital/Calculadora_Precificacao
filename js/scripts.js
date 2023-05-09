@@ -20,21 +20,24 @@ Markup = 1,88
 function calcularMarkup(event) {
     event.preventDefault();
     
-    const df = parseFloat(document.getElementById('df').value);
-    const dv = parseFloat(document.getElementById('dv').value);
-    const ml = parseFloat(document.getElementById('ml').value);
+    const df = parseFloat(document.getElementById('df').value.replace(',','.'));
+    const dv = parseFloat(document.getElementById('dv').value.replace(',','.'));
+    const ml = parseFloat(document.getElementById('ml').value.replace(',','.'));
   /*  const custo = parseFloat(document.getElementById('custo').value);*/
+  
 
     // Verifica se os campos são válidos
     if (isNaN(df) || isNaN(dv) || isNaN(ml)) {        
         alert('Por favor, preencha todos os campos corretamente, inserindo somente números.');  
         limpar();
+        
         return;
     }
 
     const markup = 100 / [100 - (df + dv + ml)];
     const resultadoElement = document.getElementById('resultado');
     resultadoElement.textContent = `O Markup é: ${markup.toFixed(2).replace('.',',')}`;
+
 }
 
 // Adiciona o evento de submit ao formulário
@@ -65,14 +68,12 @@ Preço de venda = Markup x Custo de Produção
 function calcularPrecoVenda(event) {
     event.preventDefault();
 
-    const mk = parseFloat((document.getElementById('mk').value));     
-    const cp = parseFloat((document.getElementById('cp').value));
+    const mk = parseFloat(document.getElementById('mk').value.replace(',','.'));     
+    const cp = parseFloat(document.getElementById('cp').value.replace(',','.'));
     
     // Verifica se os campos são válidos
     if (isNaN(mk) || isNaN(cp)) {
         alert('Por favor, preencha todos os campos corretamente, inserindo somente números.'); 
-       
-
         limparCampos();
         return;
     }
@@ -80,7 +81,8 @@ function calcularPrecoVenda(event) {
     const precoVenda = mk * cp ;
     const resultadoElement = document.getElementById('resultado-pv');
     resultadoElement.textContent = `O Preço de Venda é : R$ ${precoVenda.toFixed(2).replace('.',',')}`;
-}
+    }
+
 
 // Adiciona o evento de submit ao formulário
 document.getElementById('precodevendaForm').addEventListener('submit', calcularPrecoVenda);
