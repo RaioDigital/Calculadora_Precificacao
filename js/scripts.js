@@ -23,7 +23,7 @@ function calcularMarkup(event) {
     const df = parseFloat(document.getElementById('df').value.replace(',','.'));
     const dv = parseFloat(document.getElementById('dv').value.replace(',','.'));
     const ml = parseFloat(document.getElementById('ml').value.replace(',','.'));
-  /*  const custo = parseFloat(document.getElementById('custo').value);*/
+  /*const custo = parseFloat(document.getElementById('custo').value.replace(',','.'));*/
   
 
     // Verifica se os campos são válidos
