@@ -52,13 +52,25 @@
       
           <h2 id="title-section">Markup</h2>
       
-          <p id="descricao">Para fazer a precificação por markup, basta aplicar a fórmula: <br> <br>
+          <p id="descricao">Para fazer a precificação por markup, índice que indica qual será o lucro bruto ganho com a venda de um produto, basta aplicar a seguinte fórmula:<br> <br>
             <i>100 ÷ [100 – (Despesas Fixas + Despesas Variáveis + Margem de Lucro)].</i><br>
             Não deixe de considerar as seguintes variáveis:
-          </p>                
-          <i>- Despesas fixas (DF)</i><br>
-          <i>- Despesas variáveis (DV)</i><br>
-          <i>- Margem de lucro (ML)</i><br><br>
+          </p> 
+
+          <ul>
+            <li>
+              <i>Despesas fixas (DF - %): entram nesse cálculo despesas financeiras, administrativas e comerciais.</i><br>
+            </li>
+
+            <li>
+              <i>Despesas variáveis (DV - %): ocorrem durante a venda, como comissões para vendedores e impostos.</i><br>
+            </li>
+
+            <li>
+              <i>Margem de lucro (ML - %): previsão de lucros obtidos com a venda individual de um produto.</i><br><br>
+            </li>
+          </ul>
+
         </div>
 
         <div class="desc_juri">
@@ -78,20 +90,20 @@
                     </div> 
                 
                     <div class="mb-3" id="campos">
-                        <label for="custo" class="form-label">Despesas Fixas:</label>
-                        <input type="text" placeholder="Insira números inteiros e reais - Exe: 1.53 - 1,53" class="form-control" type="text" id="df" required>
+                        <label for="custo" class="form-label">Despesas Fixas % :</label>
+                        <input type="text" placeholder="Insira números inteiros ou reais - Exe: 1.53 - 1,53" class="form-control" type="text" id="df" required>
                         <div id="dfHelp" class="form-text">Digite as Despesas Fixas do Produto</div>
                     </div>
                   
                     <div class="mb-3" id="campos">
-                        <label for="custo" class="form-label">Despesas Variáveis:</label>
-                        <input type="text" placeholder="Insira números inteiros e reais - Exe: 1.53 - 1,53" class="form-control" type="text" id="dv" required>
+                        <label for="custo" class="form-label">Despesas Variáveis % :</label>
+                        <input type="text" placeholder="Insira números inteiros ou reais - Exe: 1.53 - 1,53" class="form-control" type="text" id="dv" required>
                         <div id="dvHelp" class="form-text">Digite as Despesas Variáveis do Produto</div>
                     </div>
     
                     <div class="mb-3" id="campos">
-                        <label for="custo" class="form-label">Margem de Lucro:</label>
-                        <input type="text" placeholder="Insira números inteiros e reais - Exe: 1.53 - 1,53" class="form-control" type="text" id="ml" required>
+                        <label for="custo" class="form-label">Margem de Lucro % :</label>
+                        <input type="text" placeholder="Insira números inteiros ou reais - Exe: 1.53 - 1,53" class="form-control" type="text" id="ml" required>
                         <div id="mlHelp" class="form-text">Digite a Margem de Lucro do Produto</div>
                     </div>
                     <!--
@@ -139,13 +151,27 @@
         </p>
 
         <i>Preço de venda = Markup x Custo de Produção</i><br><br>
-        <i>- Preço de Venda (PV)</i><br>
-        <i>- Markup (MK)</i><br>
-        <i>- Custo de Produção (CP)</i><br><br>        
+        
+        <ul>        
+          <li> 
+            <i>Preço de Venda (PV)</i>
+          </li>
+
+          <li>
+            <i>Markup (MK)</i>
+          </li>  
+        
+          <li>
+            <i>Custo de Produção (CP)</i>
+          </li>          
+        </ul>  
       </div>
 
       <div>
-        <p id="desc_juri"><i>Vale lembrar que o valor final varia para cada empresa.</i></p>
+        <p id="desc_juri">
+          <i>A fórmula apresentada nesta calculadora faz parte do Método Markup, que é muito utilizado na formação de preços, visto que permite equilibrar custos e lucro no mesmo cálculo. Caso o markup do seu produto esteja mais alto, você pode passar um pente fino nas etapas de produção para encontrar o gargalo, que pode ser o gasto com fornecedor ou matéria-prima, entre outros investimentos.</i> <br>
+          <i>Vale lembrar que o valor final varia para cada empresa.</i>        
+        </p>
       </div>
     </div>
     <!-- FIM DESCRIÇÃO CALCULADORA PREÇO DE VENDA-->
@@ -161,13 +187,13 @@
       
           <div class="mb-3" id="campos">
               <label for="custo" class="form-label">Markup</label>
-              <input type="text" placeholder="Insira números inteiros e reais - Exe: 1.53 - 1,53" class="form-control" type="text" id="mk" required>
+              <input type="text" placeholder="Insira números inteiros ou reais - Exe: 1.53 - 1,53" class="form-control" type="text" id="mk" required>
               <div id="dfHelp" class="form-text">Digite o valor e Markup</div>
           </div>
         
           <div class="mb-3" id="campos">
               <label for="custo" class="form-label">Custo de Produção</label>
-              <input type="text" placeholder="Insira números inteiros e reais - Exe: 1.53 - 1,53" class="form-control" type="text" id="cp" required>
+              <input type="text" placeholder="Insira números inteiros ou reais - Exe: 1.53 - 1,53" class="form-control" type="text" id="cp" required>
               <div id="dvHelp" class="form-text">Digite o Custo de Produção</div>
           </div>
 
