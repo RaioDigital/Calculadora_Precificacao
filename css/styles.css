@@ -126,6 +126,7 @@ input{
 #desc_juri{
     text-align: justify;
     font-weight: bold;
+    font-size: smaller;
 }
 
 .form-text{
